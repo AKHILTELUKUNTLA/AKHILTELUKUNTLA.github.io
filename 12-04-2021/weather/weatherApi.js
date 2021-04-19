@@ -2,7 +2,7 @@ function weather(){
 
   var request=new XMLHttpRequest();
   var city=document.getElementById("city").value;
-  var url=`http://api.openweathermap.org/data/2.5/forecast?q=${city}&units=metric&APPID=24814ed70b00b3a015c117650077bf86`
+  var url=`https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=metric&APPID=24814ed70b00b3a015c117650077bf86`
   console.log(url)
 
   request.open('GET',url,true)
